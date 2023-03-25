@@ -68,12 +68,19 @@ const blockHow = document.getElementById('how');
 	});
 
 const showMoreInfo = document.getElementsByClassName('catalog__item__name');
+const downArrow = document.getElementsByClassName('arrow-down');
+	
+
 if(showMoreInfo){
 	for (let i = 0; i < showMoreInfo.length; i++){
  		showMoreInfo[i].addEventListener('click', function(){
 		const moreInfo = document.getElementsByClassName('item__more-info');
 		moreInfo[i].classList.toggle('_show-more-info');
+		downArrow[i].classList.toggle('rotate225');
+
+
 	});
+
 }};
 
 let itemDescription = document.querySelectorAll('.catalog__item__description');
@@ -137,7 +144,6 @@ if (darkMode){
 	const mainBoxIcon = document.getElementsByClassName('main-box-icon');
 	const lineInBoxIcon = document.getElementsByClassName('line-in-box-icon');
 
-	const downArrow = document.getElementsByClassName('arrow-down');
 	const arrowUp = document.querySelector('.arrow-up');
 
 	darkMode.addEventListener("click", function () {
@@ -148,11 +154,13 @@ if (darkMode){
 		 			if(innerWidth < 993){
 		 				itemBlocks[i].style.border = "2px solid #ADD8E6";
 		 				itemBlocks[i].style.borderTop = "none"
+		 				itemBlocks[i].style.backgroundColor = "#212121"
 			 			for (let n = 0; n < itemName.length; n++){
 			 				itemName[n].style.borderTop = "2px solid #ADD8E6"
 			 			}} else {
 			 				itemBlocks[i].style.border = "2px solid #ADD8E6";
 			 				itemBlocks[i].style.borderLeft = "none"
+			 				itemBlocks[i].style.backgroundColor = "#212121"
 			 					for (let n = 0; n < itemName.length; n++){
 			 				itemName[n].style.borderLeft = "2px solid #ADD8E6"
 
@@ -234,11 +242,13 @@ if (darkMode){
 		 			if(innerWidth < 993){
 		 				itemBlocks[i].style.border = "2px solid black";
 		 				itemBlocks[i].style.borderTop = "none"
+		 				itemBlocks[i].style.backgroundColor = "white"
 			 			for (let n = 0; n < itemName.length; n++){
 			 				itemName[n].style.borderTop = "2px solid black"
 			 			}} else {
 			 				itemBlocks[i].style.border = "2px solid black";
 			 				itemBlocks[i].style.borderLeft = "none"
+			 				itemBlocks[i].style.backgroundColor = "white"
 			 					for (let n = 0; n < itemName.length; n++){
 			 				itemName[n].style.borderLeft = "2px solid black"
 

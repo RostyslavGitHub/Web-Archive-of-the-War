@@ -206,6 +206,7 @@ h3{
 	padding: 0 10px;
 	height: calc(1rem + 70px);
 	width: 100%;
+	background-color: white;
 	border: 2px solid black;
 	text-align: center;
 	border-top: none;
@@ -228,6 +229,11 @@ h3{
 	    padding: 3px;
 	    transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
+		}
+
+		.rotate225{
+			transform: rotate(225deg);
+			transition: 1s;
 		}
 }
 .catalog__item__link {

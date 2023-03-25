@@ -314,6 +314,7 @@ h3 {
   padding: 0 10px;
   height: calc(1rem + 70px);
   width: 100%;
+  background-color: white;
   border: 2px solid black;
   text-align: center;
   border-top: none;
@@ -336,6 +337,12 @@ h3 {
   padding: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+.catalog__item__name .rotate225 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .catalog__item__link {
