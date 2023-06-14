@@ -1,18 +1,18 @@
 "use strict"
 
 const menu = document.querySelector('.menu');
-const burgerMenu = document.querySelector('.burger_menu');
+const burgerMenu = document.querySelector('.burger-menu');
 if (burgerMenu){
 	burgerMenu.addEventListener("click", function (e) {
 		menu.classList.toggle('_active-menu');
-		burgerMenu.classList.toggle('_close-burger_menu_icon');
+		burgerMenu.classList.toggle('_close-burger-menu_icon');
 	});
 };
 
 let closeMenu = () => {
 		menu.classList.remove('_active-menu');
-		burgerMenu.classList.remove('_close-burger_menu_icon');
-		closeArea.classList.remove('_close_area');
+		burgerMenu.classList.remove('_close-burger-menu_icon');
+		closeArea.classList.remove('_close-area');
 };
 
 const closeArea = document.querySelector('.to-close');
@@ -28,7 +28,7 @@ let siteHeightToCloseAreaHeight = () => {
 if(closeArea){
 	siteHeightToCloseAreaHeight();
 	burgerMenu.addEventListener("click", function (e) {
-		closeArea.classList.toggle('_close_area');
+		closeArea.classList.toggle('_close-area');
 	});
 
 	closeArea.addEventListener("click", function (e) {
